@@ -1,5 +1,5 @@
 
-pkg_name=testing
+pkg_name=habtest
 pkg_origin=blackhole
 
 # Required.
