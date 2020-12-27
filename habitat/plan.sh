@@ -49,7 +49,8 @@ do_prepare() {
 
 
 do_build() {
-  do_default_build
+ # do_default_build
+ return 0
 }
 
 do_check() {
@@ -58,7 +59,8 @@ do_check() {
 
 
 do_install() {
-  do_default_install
+  # do_default_install
+  cp -Rv index.js $pkg_prefix/
 }
 
 do_strip() {
