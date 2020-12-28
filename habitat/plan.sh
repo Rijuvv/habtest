@@ -4,11 +4,11 @@ pkg_origin=blackhole
 
 # Required.
 # Sets the version of the package
-pkg_version="0.1.2"
+pkg_version="0.1.3"
 
 # Optional.
 # The name and email address of the package maintainer.
-pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
+pkg_maintainer="Riju <rijumavilayi@gmail.com>"
 
 pkg_license=("Apache-2.0")
 
