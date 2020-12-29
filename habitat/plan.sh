@@ -4,7 +4,7 @@ pkg_origin=blackhole
 
 # Required.
 # Sets the version of the package
-pkg_version="0.1.3"
+pkg_version="0.1.4"
 
 # Optional.
 # The name and email address of the package maintainer.
