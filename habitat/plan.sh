@@ -59,7 +59,7 @@ do_check() {
 
 do_install() {
   # do_default_install
-  cp -Rv index.js $pkg_prefix/
+  cp -Rv index.js $pkg_name/
 }
 
 do_strip() {
