@@ -1,9 +1,9 @@
 pkg_name=habtest
-pkg_origin=blackhole
+pkg_origin=bbb
 
 # Required.
 # Sets the version of the package
-pkg_version="0.1.4"
+pkg_version="0.1.5"
 
 # Optional.
 # The name and email address of the package maintainer.
