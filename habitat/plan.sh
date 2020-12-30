@@ -49,7 +49,6 @@ do_prepare() {
 
 do_build() {
  # do_default_build
- npm install
 }
 
 do_check() {
