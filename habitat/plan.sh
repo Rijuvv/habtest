@@ -41,10 +41,3 @@ do_install() {
     $app_path
 }
 
-do_strip() {
-  do_default_strip
-}
-
-do_end() {
-  do_default_end
-}
