@@ -3,7 +3,7 @@ pkg_origin=bbb
 
 # Required.
 # Sets the version of the package
-pkg_version="0.1.8"
+pkg_version="0.1.9"
 
 # Optional.
 # The name and email address of the package maintainer.
@@ -60,7 +60,7 @@ do_check() {
 do_install() {
   # do_default_install
   mkdir -p $pkg_prefix
-  cp -Rv index.js $pkg_prefix/
+  cp -Rv index.html $pkg_prefix/
 }
 
 do_strip() {
