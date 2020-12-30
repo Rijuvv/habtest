@@ -1,14 +1,8 @@
-const http = require('http');
+var app = require('./app');
+var http = require('http');
+var port = process.env.PORT || 8000;
 
-const hostname = '0.0.0.0';
-const port = 3000;
+app.set('port', port);
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+var server = http.createServer(app);
+server.listen(port);

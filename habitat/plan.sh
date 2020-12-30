@@ -3,7 +3,7 @@ pkg_origin=bbb
 
 # Required.
 # Sets the version of the package
-pkg_version="0.1.10"
+pkg_version="0.1.11"
 
 # Optional.
 # The name and email address of the package maintainer.
@@ -12,11 +12,7 @@ pkg_maintainer="Riju <rijumavilayi@gmail.com>"
 pkg_license=("Apache-2.0")
 
 
-pkg_shasum="TODO"
-
-pkg_deps=(core/glibc core/node)
-
-pkg_build_deps=(core/make core/gcc)
+pkg_deps=(core/node)
 
 do_begin() {
   do_default_begin
@@ -49,7 +45,8 @@ do_prepare() {
 
 do_build() {
  # do_default_build
- return 0
+ #return 0
+ npm install
 }
 
 do_check() {
@@ -59,7 +56,19 @@ do_check() {
 
 do_install() {
   # do_default_install
-  cp -Rv index.js $pkg_prefix/
+  #cp -Rv index.js $pkg_prefix/
+  local app_path="$pkg_prefix/app"
+  mkdir -p $app_path
+
+  cp -R \
+    node_modules \
+    public \
+    routes \
+    views \
+    package.json \
+    app.js \
+    index.js \
+    $app_path
 }
 
 do_strip() {
