@@ -12,7 +12,7 @@ pkg_maintainer="Riju <rijumavilayi@gmail.com>"
 pkg_license=("Apache-2.0")
 
 
-pkg_deps=(core/node)
+pkg_deps=(core/node/15.4.0)
 
 do_begin() {
   do_default_begin
