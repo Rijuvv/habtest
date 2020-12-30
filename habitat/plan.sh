@@ -3,7 +3,7 @@ pkg_origin=bbb
 
 # Required.
 # Sets the version of the package
-pkg_version="0.1.14"
+pkg_version="0.1.15"
 
 # Optional.
 # The name and email address of the package maintainer.
