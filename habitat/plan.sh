@@ -3,7 +3,7 @@ pkg_origin=bbb
 
 # Required.
 # Sets the version of the package
-pkg_version="0.1.9"
+pkg_version="0.1.10"
 
 # Optional.
 # The name and email address of the package maintainer.
@@ -14,7 +14,7 @@ pkg_license=("Apache-2.0")
 
 pkg_shasum="TODO"
 
-pkg_deps=(core/glibc)
+pkg_deps=(core/glibc core/node)
 
 pkg_build_deps=(core/make core/gcc)
 
@@ -59,8 +59,7 @@ do_check() {
 
 do_install() {
   # do_default_install
-  mkdir -p $pkg_prefix
-  cp -Rv index.html $pkg_prefix/
+  cp -Rv index.js $pkg_prefix/
 }
 
 do_strip() {
