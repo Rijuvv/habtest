@@ -49,6 +49,7 @@ do_prepare() {
 
 do_build() {
  # do_default_build
+ return 0
 }
 
 do_check() {
