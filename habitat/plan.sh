@@ -49,7 +49,7 @@ do_prepare() {
 
 do_build() {
  # do_default_build
- return 0
+ npm install
 }
 
 do_check() {
@@ -59,6 +59,7 @@ do_check() {
 
 do_install() {
   # do_default_install
+  mkdir -p $pkg_prefix
   cp -Rv index.js $pkg_prefix/
 }
 
