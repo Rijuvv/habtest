@@ -1,6 +1,9 @@
 steps:
   - label: "install"
     command: "npm install"
+    
+  - label: "Fix"
+    command: "npm audit fix"
 
   - label: "Run"
     command: "node index.js &"
