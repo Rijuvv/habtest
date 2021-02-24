@@ -1,9 +1,7 @@
 steps:
   - label: "install"
-    command: "npm i --package-lock-only"
-    
-  - label: "Fix"
-    command: "npm audit fix"
+    command: "npm i"
+
 
   - label: "Run"
     command: "node index.js &"
