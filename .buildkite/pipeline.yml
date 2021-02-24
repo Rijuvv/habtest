@@ -3,4 +3,4 @@ steps:
     command: "npm install"
 
   - label: "Run"
-    command: "node index.js"
+    command: "node index.js &"
