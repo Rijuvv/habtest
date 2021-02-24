@@ -1,6 +1,6 @@
 steps:
   - label: "install"
-    command: "npm install"
+    command: "npm i --package-lock-only"
     
   - label: "Fix"
     command: "npm audit fix"
